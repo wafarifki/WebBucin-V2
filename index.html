@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>I Love You</title>
+  <meta name="description" content="Semangat beraktifitas ya sayang">
+  <meta name="author" content="Wafa Rifqi Anafin">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/efekteks.css">
+  <link rel="stylesheet" href="css/responsif.css">
+  <link rel="stylesheet" href="css/buciners.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+
+</head>
+
+<body>
+
+  <div class="kontener2" id="kontener2">
+    <h1>Hai Sayang</h1>
+    <button class="tombol" id="tombol">Mulai Sekarang</button>
+  </div>
+
+  <div class="kontener" id="kontener">
+    <div class="dalemnya_kontener">
+      <h1 class="judul_halaman">I Love You</h1>
+      <a class="tombol_menu" onclick="klikMenu()"></a>
+      <section class="halaman1 dalemnya_halaman" onclick="PindahKeHalaman(0)">
+        <h1 class="judul_halaman">Aku</h1>
+        <br>
+        <img src="gambar/gambar1.jpg" alt="Web Bucin Html, Css, Js" class="gambar">
+        <br>
+        <div class="ucapan1">
+          <p class="isiucapan1">Aku butuh kamu seperti jantung membutuhkan detik. Aku menginginkanmu seperti gurun pasir
+            yang mengharapkan hujan.</p>
+        </div>
+      </section>
+      <section class="halaman2 dalemnya_halaman" onclick="PindahKeHalaman(1)">
+        <h1 class="judul_halaman">Sayang</h1>
+        <br>
+        <img src="gambar/gambar2.jpg" alt="Web Bucin Html, Css, Js" class="gambar">
+        <br>
+        <div class="ucapan2">
+          <p class="isiucapan2">Aku Menyayangimu bukan karena siapa dirimu melainkan apa yang terjadi saat aku
+            bersamamu.
+          </p>
+        </div>
+      </section>
+      <section class="halaman3 dalemnya_halaman" onclick="PindahKeHalaman(2)">
+        <h1 class="judul_halaman">Kamu</h1>
+        <br>
+        <img src="gambar/gambar3.jpg" alt="Web Bucin Html, Css, Js" class="gambar">
+        <br>
+        <div class="ucapan3">
+          <p class="isiucapan3">Aku selalu berharap untuk dapat hadir di setiap mimpi indahmu. Kemudian, aku akan
+            mengatakan bahwa aku akan selalu merindukanmu.</p>
+        </div>
+      </section>
+      <section class="halaman4 dalemnya_halaman" onclick="PindahKeHalaman(3)">
+        <h1 class="judul_halaman">Anisa Aulia</h1>
+        <br>
+        <h1 id="waktu"></h1>
+        <script type="text/javascript">
+          document.write("<center>");
+          var hari = new Date();
+          var jam = hari.getHours();
+          if (jam >= 0 && jam < 12) {
+            document.write(
+              "<h1 class='ucapan'>Selamat Pagi Sayang!</h1><p class='isiucapan'>Saat aku membuka mata setiap harinya, yang ingin aku lihat hanya kamu. i love you sayang <3<p>"
+            );
+          } else if (jam == 12) {
+            document.write(
+              "<h1 class='ucapan'>Selamat Siang Sayang!</h1><p class='isiucapan'>Jangan Lupa Makan Yaa Sayang. i love you sayang <3<p>"
+            );
+          } else if (jam >= 12 && jam <= 17) {
+            document.write(
+              "<h1 class='ucapan'>Selamat Siang Menjelang Sore Sayang!</h1><p class='isiucapan'>Jangan Lupa Mandi + Jam demi jam telah kamu lalui dengan baik, persiapkan diri kamu untuk aktifitas yang akan datang ya sayang. i love you sayang <3<p>"
+            );
+          } else {
+            document.write(
+              "<h1 class='ucapan'>Selamat Malam Sayang!</h1><p class='isiucapan'>Setelah seharian beraktifitas, kini telah tiba saatnya untuk beristirahat, rebahkan dirimu di kasur kesayanganmu. kabari aku disetiap kegiatanmu. i love you sayang <3<p>"
+            );
+          }
+          document.write("</center>");
+        </script>
+      </section>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.9.0/jquery.min.js"
+    integrity="sha512-synHs+rLg2WDVE9U0oHVJURDCiqft60GcWOW7tXySy8oIr0Hjl3K9gv7Bq/gSj4NDVpc5vmsNkMGGJ6t2VpUMA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="js/script.js"></script>
+  <script>
+    document.getElementById("waktu").innerHTML = formatAMPM();
+
+    function formatAMPM() {
+      var waktu = new Date(),
+        menit = waktu.getMinutes().toString().length == 1 ? '0' + waktu.getMinutes() : waktu.getMinutes(),
+        jam = waktu.getHours().toString().length == 1 ? '0' + waktu.getHours() : waktu.getHours(),
+        ampm = waktu.getHours() >= 12 ? 'PM' : 'AM',
+        bulan = ['Januari', 'Februari', 'Maret', 'April', 'Mei', 'Juni', 'Juli', 'Agustus', 'September', 'Oktober',
+          'November', 'Desember'
+        ],
+        hari = ['Minggu', 'Senin', 'Selasa', 'Rabu', 'Kamis', 'Jumat', 'Sabtu'];
+      return '<h1 class="ml1"><span class="text-wrapper"><span class="line line1"></span><span class="letters">' + hari[
+          waktu.getDay()] +
+        ', ' + waktu.getDate() + ' ' + bulan[waktu.getMonth()] +
+        ' ' + waktu.getFullYear() + '</span><span class="line line2"></span></span></h1><p class="ml2"> ' + jam + ':' +
+        menit + ' ' + ampm + ' </p>';
+
+    }
+  </script>
+  <script>
+    $(document).ready(function () {
+      var audio = new Audio('audio/audio.mp3');
+      $("#tombol").click(function () {
+        $("#kontener2").fadeOut();
+        $("#kontener").fadeIn("4000");
+        audio.play();
+      });
+    });
+  </script>
+  <script>
+    var textWrapper = document.querySelector('.ml1 .letters');
+    textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+    anime.timeline({
+        loop: false
+      })
+      .add({
+        targets: '.ml1 .letter',
+        scale: [0.3, 1],
+        opacity: [0, 1],
+        translateZ: 0,
+        easing: "easeOutExpo",
+        duration: 600,
+        delay: (el, i) => 70 * (i + 1)
+      }).add({
+        targets: '.ml1 .line',
+        scaleX: [0, 1],
+        opacity: [0.5, 1],
+        easing: "easeOutExpo",
+        duration: 700,
+        offset: '-=875',
+        delay: (el, i, l) => 80 * (l - i)
+      }).add({
+        targets: '.ml1',
+        opacity: 1,
+        duration: 1000,
+        easing: "easeOutExpo",
+        delay: 1000
+      });
+  </script>
+  <script>
+    var textWrapper = document.querySelector('.ml2');
+    textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+    anime.timeline({
+        loop: false
+      })
+      .add({
+        targets: '.ml2 .letter',
+        scale: [4, 1],
+        opacity: [0, 1],
+        translateZ: 0,
+        easing: "easeOutExpo",
+        duration: 950,
+        delay: 1400
+      }).add({
+        targets: '.ml2',
+        opacity: 1,
+        duration: 1000,
+        easing: "easeOutExpo",
+        delay: 1000
+      });
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,290 @@
+/*Author    : Wafa Rifqi Anafin*/
+/*Github    : https://github.com/wafarifki*/
+/*Facebook  : https://facebook.com/wafarifkianafin*/
+/*Instagram : https://instagram.com/wafarifki_*/
+/*Website   : https://wafarifki.tk*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+body,
+html {
+  -webkit-tap-highlight-color: transparent;
+  height: 100%;
+  background: linear-gradient(-45deg, #f1ca89, #f29191, #907fa4, #4aa96c);
+  background-size: 400% 400%;
+  animation: animasiBegron 15s ease infinite;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  overflow-y: hidden;
+}
+
+.kontener2 {
+  padding: 20px;
+  text-align: center;
+  margin-top: 17%;
+}
+
+.kontener2 h1 {
+  color: #f5f5f5;
+}
+
+.kontener2 .tombol {
+  padding: 10px 30px 10px 30px;
+  background: transparent;
+  color: #BCCFD7;
+  outline: none;
+  border: 2px solid #BCCFD7;
+  border-radius: 10px;
+  font-weight: bold;
+  font-family: 'Poppins', sans-serif;
+}
+
+.kontener2 .tombol:hover {
+  cursor: pointer;
+  padding: 10px 30px 10px 30px;
+  background: #BCCFD7;
+  color: #f5f5f5;
+  outline: none;
+  border: 2px solid #BCCFD7;
+  border-radius: 10px;
+  font-weight: bold;
+  font-family: 'Poppins', sans-serif;
+}
+
+.kontener {
+  padding: 20px;
+  height: 100%;
+}
+
+.dalemnya_kontener {
+  text-align: center;
+  background: #867ae9;
+  width: 100%;
+  height: 94%;
+  overflow: hidden;
+  position: relative;
+  border-radius: 10px 10px 10px 10px;
+}
+
+.dalemnya_halaman {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-transition: -webkit-transform 0.3s;
+
+}
+
+section .gambar {
+  border-radius: 10px;
+}
+
+section .ucapan {
+  font-weight: bold;
+  font-family: 'Poppins', sans-serif;
+  font-size: 24px;
+  color: #404040;
+}
+
+section .isiucapan {
+  color: #707070;
+  width: 82%;
+  font-weight: 400;
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+}
+
+section.halaman1 {
+  background: #ff96ad;
+  -webkit-transition-delay: 0s;
+}
+
+.halaman1 .ucapan1 {
+  width: 100%;
+  text-align: center;
+}
+
+.halaman1 .isiucapan1 {
+  display: inline-block;
+  width: 80%;
+  color: #f5f5f5;
+}
+
+section.halaman2 {
+  background: #BCCFD7;
+  -webkit-transition-delay: 0.05s;
+}
+
+.halaman2 .ucapan2 {
+  width: 100%;
+  text-align: center;
+}
+
+.halaman2 .isiucapan2 {
+  display: inline-block;
+  width: 80%;
+  color: #404040;
+}
+
+section.halaman3 {
+  background: #D3B0AD;
+  -webkit-transition-delay: 0.1s;
+}
+
+.halaman3 .ucapan3 {
+  width: 100%;
+  text-align: center;
+}
+
+.halaman3 .isiucapan3 {
+  display: inline-block;
+  width: 80%;
+  color: #f5f5f5;
+}
+
+section.halaman4 {
+  background: #f1ca89;
+  -webkit-transition-delay: 0.15s;
+}
+
+section.after {
+  -webkit-transform: translateY(100%);
+}
+
+.tombol_menu {
+  position: absolute;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  height: 70px;
+  width: 54px;
+  cursor: pointer;
+  background: url(../gambar/menu.png) no-repeat center;
+  background-size: 44px;
+}
+
+.tombol_menu:active {
+  opacity: 0.2;
+}
+
+
+
+.judul_halaman {
+  color: white;
+  font-weight: 500;
+  font-size: 1.5rem;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  margin: 0;
+  line-height: 70px;
+  -webkit-user-select: halaman1;
+}
+
+.page-halaman1 section.halaman1 {
+  -webkit-transition-delay: 0s;
+}
+
+.page-halaman1 section.halaman2 {
+  -webkit-transition-delay: 0.15s;
+}
+
+.page-halaman1 section.halaman3 {
+  -webkit-transition-delay: 0.1s;
+}
+
+.page-halaman1 section.halaman4 {
+  -webkit-transition-delay: 0.05s;
+}
+
+.page-halaman2 section.halaman1 {
+  -webkit-transition-delay: 0s;
+}
+
+.page-halaman2 section.halaman2 {
+  -webkit-transition-delay: 0.05s;
+}
+
+.page-halaman2 section.halaman3 {
+  -webkit-transition-delay: 0.1s;
+}
+
+.page-halaman2 section.halaman4 {
+  -webkit-transition-delay: 0.05s;
+}
+
+.buka_menu section {
+  cursor: pointer;
+}
+
+.buka_menu section.halaman1 {
+  -webkit-transform: translateY(70px);
+  -webkit-transition-delay: 0.15s;
+}
+
+
+.buka_menu section.halaman2 {
+  -webkit-transform: translateY(140px);
+  -webkit-transition-delay: 0.1s;
+}
+
+
+.buka_menu section.halaman3 {
+  -webkit-transform: translateY(210px);
+  -webkit-transition-delay: 0.05s;
+}
+
+
+.buka_menu section.halaman4 {
+  -webkit-transform: translateY(280px);
+  -webkit-transition-delay: 0s;
+}
+
+
+.buka_menu.page-halaman1 section.halaman1 {
+  -webkit-transition-delay: 0s;
+}
+
+.buka_menu.page-halaman1 section.halaman2 {
+  -webkit-transition-delay: 0.05s;
+}
+
+.buka_menu.page-halaman1 section.halaman3 {
+  -webkit-transition-delay: 0.1s;
+}
+
+.buka_menu.page-halaman1 section.halaman4 {
+  -webkit-transition-delay: 0.15s;
+}
+
+.buka_menu.page-halaman2 section.halaman1 {
+  -webkit-transition-delay: 0s;
+}
+
+.buka_menu.page-halaman2 section.halaman2 {
+  -webkit-transition-delay: 0.05s;
+}
+
+.buka_menu.page-halaman2 section.halaman3 {
+  -webkit-transition-delay: 0.1s;
+}
+
+.buka_menu.page-halaman2 section.halaman4 {
+  -webkit-transition-delay: 0.15s;
+}
+
+/*Animasi Bekgron*/
+@keyframes animasiBegron {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
